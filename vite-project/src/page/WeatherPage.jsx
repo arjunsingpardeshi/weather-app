@@ -30,7 +30,7 @@ const WeatherPage = () => {
             setLoading(true);
             setError(null);
             setWeather(null);
-            const coordinateRes = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api_key}`)
+            const coordinateRes = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api_key}`)
         
             if(coordinateRes.data.length === 0 ){
                 setError("city not found")
