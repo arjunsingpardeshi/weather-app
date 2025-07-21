@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import { Button } from "@/components/ui/button"
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import WeatherPage from './page/WeatherPAge'
+import WeatherPage from './page/WeatherPage'
 
 function App() {
   const [count, setCount] = useState(0)
